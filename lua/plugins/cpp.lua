@@ -1,0 +1,12 @@
+return {
+  -- Explicit clang-format via conform.nvim (autoformat on save)
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        c = { "clang_format" },
+        cpp = { "clang_format" },
+      },
+    },
+  },
+}
